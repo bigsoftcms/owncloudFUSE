@@ -40,6 +40,6 @@ read/writable by the webserver user, essentially trusting owncloud to keep
 trust that this code is safe. Currently no security audit has been performed.
 
 I do a little to mitigate this:
-	* while FUSE allow_other, is set, I check the context, so that only the owncloud
-	  user (www-data) can play in `/tmp/home`.
-	* I try to keep owncloudFUSE small and simple to reduce complexity/bugs.
+
+* while FUSE allow_other, is set, I check the context, so that only the owncloud user (www-data) can play in `/tmp/home`.
+* I try to keep owncloudFUSE small and simple to reduce complexity/bugs.
